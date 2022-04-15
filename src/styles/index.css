@@ -1,0 +1,228 @@
+:root {
+    --green_color: #ACD9B2;
+    --grey_color: #C7C7C7;
+    --white_color: #F7F7F7;
+    --sm: 14px;
+    --md: 16px;
+    --lm: 18px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', 'sans-serif';
+    /*position: relative;*/
+}
+
+header {
+    height: 75px;
+    /*border: 1px red solid;*/
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: var(--lm);
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin-left: 54px;
+}
+
+header ul li {
+    margin: 0px 12px 0px 12px;
+    font-weight: bold;
+}
+
+header div:nth-child(1) {
+    width: 25%;
+    /*border: 1px blue solid;*/
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header div:nth-child(2) {
+    width: 75%;
+    /*border: 1px green solid;*/
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo_header{
+    width: 220px;
+    height: 70px;
+}
+
+.item_selected {
+    color: var(--grey_color);
+}
+
+.slider{
+    height: 440px;
+    width: 100%;
+    position: relative;
+}
+
+.slider img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider p{
+    color: white;
+    font-size: calc(var(--lm)*2);
+    position: absolute;
+    bottom: 64px;
+    left: 164px;
+}
+
+.container_about_us{
+    /*border: 1px blue solid;*/
+    width: 70%;
+    height: 440px;
+    display: flex;
+    margin-top: 94px;
+}
+
+.container_about_us_section_one{
+    display: flex;
+    width: 50%;
+    padding-right: 50px;
+}
+
+.container_about_us_section_two{
+    padding: 24px 0px 24px 0px;
+    width: 50%;
+}
+
+.container_about_us_section_one > p {
+    width: 20%;
+    margin: 0px;
+    writing-mode: vertical-lr;
+    letter-spacing: 20px;
+    transform: rotate(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--grey_color);
+    margin-top: 67px;
+}
+
+.container_about_us_section_one > div {
+    width: 80%;
+    font-size: var(--md);
+}
+
+.container_about_us_section_one > div > p:nth-child(1) {
+    font-size: var(--lm);
+    color: var(--green_color);
+    font-weight: bold;
+    margin: 0px
+}
+
+.container_about_us_section_one > div > p:nth-child(2) {
+    font-size: var(--md);
+    line-height : 25px;
+    margin-top: 54px;
+}
+
+.container_about_us_section_one_btn{
+    display: flex;
+    color: var(--green_color);
+    font-weight: bold;
+    align-items: center;
+    width: 108px;
+}
+
+.container_about_us_section_one_btn:hover{
+    cursor: pointer;
+}
+
+.container_about_us_section_one_btn > div{
+    height: 30px;
+    width: 30px;
+    background-color: var(--green_color);
+    border: none;
+    margin-right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_about_us_section_one_btn > div > i{
+    color: white !important;
+    transition: 0.4s linear;
+}
+
+.container_about_us_section_one_btn > div > i:hover{
+    margin-left: 8px;
+}
+
+.container_about_us_section_two img{
+    width: 100%;
+    height: 100%;
+}
+
+.why_choose_us{
+    width: 70%;
+    height: 440px;
+    display: flex;
+    margin-top: 94px;
+    flex-direction: column;
+}
+
+.why_choose_us > p{
+    justify-content: center;
+    text-align: center;
+}
+
+.section_carts_choose_us{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 54px;
+}
+
+.section_carts_choose_us > div{
+    display: flex;
+    width: 28%;
+    box-shadow: 0px 0px 7px #eeeeee;
+    flex-direction: column;
+    text-align: center;
+    padding: 18px;
+}
+
+.section_carts_choose_us > div > p:nth-child(2){
+    color: var(--green_color);
+    font-weight: bold;
+}
+
+.container_btn_wpp {
+    background-color: #25d366;
+    color: white;
+    width: 216px;
+    height: 32px;
+    font-size: var(--sm);
+    display: flex;
+    align-items: center;
+    border-radius: 18px;
+    padding: 4px 8px 4px 8px;
+    /*position: absolute;*/
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+}
+
+.container_btn_wpp i{
+    margin-right: 12px;
+    margin-left: 12px;
+}
