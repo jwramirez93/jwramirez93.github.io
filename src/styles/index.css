@@ -228,21 +228,49 @@ main{
 }
 
 @media (max-width: 480px){
+
+    header{
+        height: 128px;
+        flex-direction: column;
+    }
+
+    header div:nth-child(1){
+        width: 100%;
+        justify-content: center;
+    }
+
+    header div:nth-child(2){
+        width: 100%;
+        font-size: var(--sm);
+        justify-content: space-around;
+    }
+
+    header ul{
+        margin-left: unset;
+    }
+
+    header ul li{
+        margin: 0px 4px 0px 4px
+    }
     
     .slider p{
         font-size: calc(var(--lm)*1.5);
-        top: 54px;
-        right: 44px;
+        top: 40px;
+        bottom: unset;
+        left: unset;
+        right: 0px;
+        width: 214px;
     }
 
     .container_about_us{
         flex-direction: column;
         width: 100%;
         margin-top: 47px;
+        height: 344px;
     }
 
     .container_about_us_section_one{
-        padding: none;
+        padding: unset;
         width: 100%;
     }
 
