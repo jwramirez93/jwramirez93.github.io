@@ -226,3 +226,48 @@ main{
     margin-right: 12px;
     margin-left: 12px;
 }
+
+@media (max-width: 480px){
+    
+    .slider p{
+        font-size: calc(var(--lm)*1.5);
+        top: 54px;
+        right: 44px;
+    }
+
+    .container_about_us{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 47px;
+    }
+
+    .container_about_us_section_one{
+        padding: none;
+        width: 100%;
+    }
+
+    .container_about_us_section_one > div > p:nth-child(2) {
+        margin-top: 27px;
+    }
+
+    .container_about_us_section_two{
+        visibility: hidden;
+    }
+    
+    .why_choose_us{
+        margin-top: 47px;
+        width: 100%;
+    }
+
+    .section_carts_choose_us{
+        margin-top: 27px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section_carts_choose_us > div{
+        width: 74%;
+        margin-bottom: 24px;
+    }
+
+}
