@@ -274,6 +274,10 @@ main{
         width: 100%;
     }
 
+    .container_about_us_section_one > p{
+        width: 14%;
+    }
+
     .container_about_us_section_one > div > p:nth-child(2) {
         margin-top: 27px;
     }
